@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home.jsx'
 import Destination from './pages/Destination'
@@ -9,7 +9,7 @@ import Technology from './pages/Technology'
 function App() {
 
   return (
-    <BrowserRouter basename='Space-tourism-website'>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path='/crew' element={<Crew />} />
         <Route path='/technology' element={<Technology />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
