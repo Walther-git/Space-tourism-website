@@ -9,7 +9,7 @@ import Technology from './pages/Technology'
 function App() {
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename='Space-tourism-website'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
