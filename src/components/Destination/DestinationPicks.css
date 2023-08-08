@@ -1,0 +1,377 @@
+  .font-barlow {
+    font-family: Barlow Condensed;
+  }
+
+  .font-style {
+    font-style: normal;
+  }
+
+  .line-height {
+    line-height: normal;
+  }
+
+  .window {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-row {
+    display: flex;
+    justify-content: space-around;
+    width: 217px;
+    margin-bottom: 2rem;
+  }
+
+  .number {
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.16875rem;
+    opacity: 0.25;
+  }
+
+  .first-title {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.16875rem;
+    text-transform: uppercase;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+  }
+  
+  .destionation-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    user-select: none;
+  }
+
+  .flex-colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ul-class,
+  .li-class {
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.14763rem;
+    text-transform: uppercase;
+  }
+  
+  .ul-class {
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+    height: 32px;
+  }
+  
+  .li-class {
+    color: #D0D6F9;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+
+  .li-class:hover {
+    border-bottom: rgba(255, 255, 255, 0.5) solid 3px;
+    margin-bottom: -3px;
+  }
+
+  .li-class.selected {
+    color: #fff;
+  }
+  
+  .underline {
+    position: absolute;
+    
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #FFF;
+  }
+
+  .planet {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 2.6em;
+  }
+  
+  .title-planet {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .description {
+    color: #D0D6F9;
+    width: 20rem;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem; /* 166.667% */
+    padding-bottom: 30px;
+    margin-bottom: .2em;
+    border-bottom: #383B4B solid 0.0625em;
+  }
+
+  .box-avg-est {
+    margin-top: .8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 170px;
+  }
+
+  .box-avg {
+    text-align: center;
+    margin-bottom: .8em;
+  }
+
+  .distance {
+    color: #D0D6F9;
+    margin-bottom: .9em;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.14763rem;
+    text-transform: uppercase;
+  }
+
+  .distance-number {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .box-est {
+    text-align: center;
+  }
+
+  @media (width >=768px) {
+    .window {
+      top: 136px;
+    }
+
+    .flex-row {
+      display: flex;
+      align-self: flex-start;
+      margin-left: 2rem;
+      width: 288px;
+      margin-bottom: 4rem;
+    }
+
+    .number {
+      font-size: 1.25rem;
+      letter-spacing: 0.21094rem;
+    }
+  
+    .first-title {
+      font-size: 1.25rem;
+      letter-spacing: 0.21094rem;
+    }
+
+    .planet {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 3.6em;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 27rem;
+    }
+
+    .ul-class,
+    .li-class {
+      font-size: 1rem; 
+      letter-spacing: 0.16875rem;
+    }
+    
+    .ul-class {
+      width: 18rem;
+    }
+
+    .title-planet {
+      font-size: 5rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.75rem; /* 175% */
+      padding-bottom: 3rem;
+      width: 35rem;
+      margin: .7rem 0rem .2rem 0rem;
+    }
+
+    .box-avg-est {
+      margin-top: .8em;
+      display: flex;
+      flex-direction: row;
+      width: 30rem;
+      justify-content: space-around;
+      height: auto;
+    }
+  
+    .box-avg {
+      text-align: center;
+      margin-bottom: .8em;
+    }
+  
+    .distance {
+      color: #D0D6F9;
+      margin-bottom: .9em;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.14763rem;
+      text-transform: uppercase;
+    }
+  
+    .distance-number {
+      color: #FFF;
+      text-align: center;
+      font-family: Bellefair;
+      font-size: 1.75rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  
+    .box-est {
+      text-align: center;
+    }
+
+  }
+
+  @media (width >=1440px) {
+
+    .window {
+      position: absolute;
+      top: 105px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 1133px;
+      height: 585px;
+      
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .flex-row {
+      margin-left: 0;
+      margin-bottom: 0;
+      width: 400px;
+    }
+
+    .number {
+      font-size: 1.75rem;
+      letter-spacing: 0.29531rem;
+    }
+
+    .first-title {
+      font-size: 1.75rem;
+      letter-spacing: 0.29531rem;
+    }
+
+    .planet {
+      width: 445px;
+      height: 445px;
+      margin-left: 63px;
+      margin-bottom: 0em;
+    }
+
+    .navigation {
+      align-self: self-end;
+      display: flex;
+      justify-content: center;
+      position: static;
+      top: 15rem;
+      width: 100%;
+    }
+
+    .ul-class {
+      margin-right: 2rem;
+      height: 44px;
+    }
+
+    .destionation-main {
+      grid-column: -3 / -1;
+    }
+
+    .flex-colum {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: end;
+    }
+
+    .title-planet {
+      font-size: 6.25rem;
+      text-align: left;
+    }
+
+    .description {
+      font-size: 1.125rem;
+      text-align: left;
+      width: 27.8125rem;
+      line-height: 2rem; /* 177.778% */
+    }
+
+    .box-text {
+      align-self: end;
+    }
+
+    .box-avg-est {
+      width: 20rem;
+      justify-content: space-between;
+    }
+
+    .distance {
+      text-align: left;
+    }
+
+    .distance-number {
+      text-align: left;
+    }
+
+    .box-avg {
+      margin-bottom: 0;
+    }
+
+  }
