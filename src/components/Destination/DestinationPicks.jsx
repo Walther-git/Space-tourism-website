@@ -1,5 +1,5 @@
 import "./DestinationPicks.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { initialTabs as tabs } from "./DataDestination.jsx";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -59,9 +59,9 @@ export default function App() {
               <div className='box-avg-est'>
                 <div className='box-avg'>
                   <p className='distance font-barlow font-style line-height'>AVG. DISTANCE</p>
-                  <p className='distance-number font-style line-height'>
+                  <motion.p className='distance-number font-style line-height'>
                     {selectedTab.distance}
-                  </p>
+                  </motion.p>
                 </div>
 
                 <div className='box-est'>
